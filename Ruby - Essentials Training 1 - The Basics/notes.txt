@@ -1,0 +1,115 @@
+1. Using Ruby (Three ways):
+   - Single command
+   - Ruby file
+   - Interactive Ruby Shell (IRB)
+To start IRB -> irb
+ruby -e 'puts Hello' // prints Hello
+-----------------------------------------------------------------------------------------------------------
+
+2. Ruby object type
+2.1. Objects
+- An object oriented programming language
+- No "primitives"
+- Most everything is an object 
+- Variables are not objects
+object.object_id -> for every object
+**************************************************************
+2.2 Variables
+ - Global - $variable
+ - Class - @@variable
+ - Instance - @variable
+ - Local - variable
+ - Block - variable
+ **************************************************************
+3.3 Numbers: Integers
+ - As other languages
+ 123.class -> Integer
+ 100.next -> 101
+ -50.abs -> 50
+ **************************************************************
+3.4 Numbers: Floats
+ 123.12.class -> Float
+ 123.12.round -> 123
+ 123.12.floor -> 123
+ 123.12.to_i -> 123
+ 123.ceil -> 124
+ **************************************************************
+ 3.5 Strings
+ greeting = "Hello"
+ greeting << " World" # appends
+ puts greeting # Hello world
+ "3.1".to_i -> converts to integer
+ "123".reverse -> reverses the string
+ "cats".capitalize -> "Cats"
+ "cats".upcase -> "CATS"
+ "cats".upcase.reverse -> "STAC"
+ "cats"[0] -> c
+ **************************************************************
+ 3.6 Strings: Escaping and interpolation 
+ \ (backslash) - escapes
+ - interpolation
+ name = "Lynda"
+ puts "Hello #{name}"
+ puts "1 + 1 = #{1 + 1}" -> interpolation can be used for ruby processing
+ **************************************************************
+ 3.7 Arrays
+ empty_array = []
+ arr = ["1", 1, "onee"]
+ arr[110] = "new item" 
+ arr << "123" -> adds new item in the array
+ arr[2..3] -> everything between 2 and 3
+ arr[-2..3] -> everything between -2 and 3
+ **************************************************************
+3.8 Array methods
+arr.size
+arr.length 
+arr.reverse
+arr.sort
+arr.sort! -> '!' -> sorts and assigns the new value
+arr.shuffle
+arr.uniq
+arr.compact -> removes all nils
+arr.flatten -> unwraps all inner arrays
+arr.incule?(2) -> does it include 2
+arr.delete_at(pos) -> deletes an item at a given position
+arr.delete(obj) -> deletes an object (all occurrences)
+arr.join(',') -> like java join
+"1,2,3,4".split(',') -> splits string into an array
+arr.push(1) -> at the end of the array
+arr.pop
+arr.shift
+arr.unshift(1) -> pushes in front of the array
+arr + other_arr -> combines two or more arrays
+arr - other_arr -> removes from first
+arr.empty?
+ **************************************************************
+3.9 Hashes (Maps)
+car = {'brand' => 'Ford'}
+car.keys
+car.values
+car.length
+car.size
+car.to_array
+car.merge
+car.has_key?('a')
+car.has_value?('a')
+ **************************************************************
+3.10 Symbols
+- Like Strings but cannot be edited (Immutables)
+- Begin with a colon
+- Not delimieted by quotes
+- Better memory management
+car = {:brand => "ford", :model => "T"}
+car = {brand: "Ford", model: "T"}
+THESE ARE THE SAME
+ **************************************************************
+3.11 Ranges
+- Sequence of numbers (for example)
+- Inclusive range 1..10
+- Exclusive range 1...10
+ **************************************************************
+3.12 Constants
+MAX_SCORE = 100 -> Depends on the first letter
+ **************************************************************
+3.13 Nil
+a.nil? , a == nil, !a
